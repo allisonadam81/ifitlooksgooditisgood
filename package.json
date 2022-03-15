@@ -1,0 +1,24 @@
+{
+  "name": "envo_tracker",
+  "version": "1.0.0",
+  "description": "a tracker to see what's going on with the environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allisonadam81/Envo_Tracker.git"
+  },
+  "keywords": [
+    "environment",
+    "envo",
+    "tracker"
+  ],
+  "author": "Adam Allison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allisonadam81/Envo_Tracker/issues"
+  },
+  "homepage": "https://github.com/allisonadam81/Envo_Tracker#readme"
+}
