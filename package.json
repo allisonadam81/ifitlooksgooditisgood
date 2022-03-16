@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/allisonadam81/Envo_Tracker#readme",
   "dependencies": {
+    "express": "^4.17.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.49.9"

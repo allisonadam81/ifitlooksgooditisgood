@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Password from './Password.jsx';
 import Username from './Username.jsx';
-
+import LoginButton from './LoginButton.jsx';
 
 class LoginContainer extends Component{
   constructor(props){
@@ -14,6 +14,7 @@ class LoginContainer extends Component{
         <h1>Login</h1>
         <Username/>
         <Password/>
+        <LoginButton/>
       </div>
     )
   }
