@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "",
+    "start": "node server.js",
     "build": "webpack",
     "dev": "webpack serve --open"
   },
@@ -26,8 +26,10 @@
   "homepage": "https://github.com/allisonadam81/Envo_Tracker#readme",
   "dependencies": {
     "express": "^4.17.3",
+    "node-fetch": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2",
     "sass": "^1.49.9"
   },
   "devDependencies": {

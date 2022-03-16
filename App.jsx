@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LoginContainer from './login/LoginContainer.jsx'
+import LoginContainer from './client/login/LoginContainer.jsx'
 
 class App extends Component {
   constructor(props) {
