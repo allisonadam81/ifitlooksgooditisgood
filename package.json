@@ -4,7 +4,10 @@
   "description": "a tracker to see what's going on with the environment",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "",
+    "build": "webpack",
+    "dev": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,23 @@
   "bugs": {
     "url": "https://github.com/allisonadam81/Envo_Tracker/issues"
   },
-  "homepage": "https://github.com/allisonadam81/Envo_Tracker#readme"
+  "homepage": "https://github.com/allisonadam81/Envo_Tracker#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
 }
