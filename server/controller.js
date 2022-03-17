@@ -33,5 +33,4 @@ apiController.getQuote = (req, res, next) => {
 //     console.error(err);
 //   });
 
-
 module.exports = apiController;
