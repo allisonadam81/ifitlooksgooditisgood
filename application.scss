@@ -4,10 +4,12 @@
 $zenFont: 'Zen Antique Soft', serif;
 $montserrat: 'Montserrat', sans-serif;
 
-$primary-color: rgb(185, 239, 255);
+$soft-orange: lighten(orange, 40%);
+$soft-pink: lighten(pink, 20%);
+$primary-blue: rgb(185, 239, 255);
 
 body {
-  background:linear-gradient(to right, $primary-color, lighten(pink, 20%), lighten(orange, 40%));
+  background: linear-gradient(to right, $primary-blue, $soft-pink, $soft-orange);
 }
 
 .container {
@@ -29,7 +31,8 @@ body {
 
   .quote-text {
     padding: 5px;
-    // border: solid black 2px;
+    text-align: center;
+    //border: solid black 2px;
   }
   .author {
     display: flex;
@@ -51,7 +54,11 @@ body {
   font-size: 15px;
   border-radius: 10px;
   margin: 20px;
-  background-color: white;
+  background: transparent;
   border: solid black 1px;
   width: 135px;
+  color: black;
+}
+.btn:hover {
+  background: linear-gradient(to right, lighten($primary-blue, 5%) 10%, lighten(pink, 10%), lighten(orange, 45%));
 }

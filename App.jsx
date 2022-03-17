@@ -38,7 +38,11 @@ class App extends Component {
       body: JSON.stringify({ text, author })
     })
     .then(data => data.json())
-    .then(res => alert(res.message))
+    .then(res => {
+      console.log(res.message);
+      return alert('success!')
+    }
+      )
   }
 
   componentDidMount () {

@@ -3,6 +3,12 @@ const app = express();
 const port = 3000;
 const apiController = require('./server/controller.js');
 
+const mongoose = require('mongoose');
+const mongoURI = 'mongodb+srv://codesmith:codesmith@adamdb.suxqk.mongodb.net/Quotes';
+mongoose.connect(mongoURI)
+  .then (() => console.log('connected'))
+  .catch ((err) => console.log(err));
+
 //convert all requests from JSON.
 app.use(express.json());
 
@@ -11,7 +17,7 @@ app.get('/api', apiController.getQuote, (req, res) => {
   res.status(200).send(res.locals.quote)
 });
 
-app.post('/api/favorite', apiController.favoriteQuote, (req, res) => {
+app.post('/api/favorite', apiController.favoriteQuote2, (req, res) => {
   res.status(200).json(res.locals)
 })
 
@@ -24,3 +30,5 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`I am listening on port ${port}`)
 });
+
+module.exports = app;
