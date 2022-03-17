@@ -26,15 +26,15 @@ module.exports = {
     title: 'Dev',
     template: 'index.html'
   })],
-  // devServer: {
-  //   static: {
-  //     publicPath: '/dist',
-  //     directory: path.join(__dirname, 'dist')
-  //   },
-  //   compress: true,
-  //   port: 8080,
-  //   proxy: {
-  //     '/api': 'http://localhost:3000'
-  //   }
-  // }
+  devServer: {
+    static: {
+      publicPath: '/dist',
+      directory: path.join(__dirname, 'dist')
+    },
+    compress: true,
+    port: 8080,
+    proxy: {
+      '/': 'http://localhost:3000'
+    }
+  }
 };

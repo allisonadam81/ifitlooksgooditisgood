@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import SignUpPassword from './SignUpPassword.jsx';
 import SignUpUsername from './SignUpUsername.jsx';
 import SignUpButton from './SignUpButton.jsx';
-import { json } from 'express';
+// import { json } from 'express';
 
 class SignUpContainer extends Component{
   constructor(props){
@@ -11,8 +11,7 @@ class SignUpContainer extends Component{
 
   }
 
-
-
+  
   render() {
     return(
       <div  className='login-container'>

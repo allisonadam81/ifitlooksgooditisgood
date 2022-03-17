@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 
 import Password from './Password.jsx';
 import Username from './Username.jsx';
-import LoginButton from './LoginButton.jsx';
+import GenerateQuoteButton from './LoginButton.jsx';
 import SignUpText from './SignUpText.jsx';
-import { json } from 'express';
 
 class LoginContainer extends Component{
   constructor(props){
@@ -12,16 +11,11 @@ class LoginContainer extends Component{
 
   }
 
-
-
   render() {
     return(
       <div  className='login-container'>
-        <h1>Login</h1>
-        <Username/>
-        <Password/>
-        <LoginButton/>
-        <SignUpText/>
+        <h1>rip solo project</h1>
+        <GenerateQuoteButton className='quote-button'/>
       </div>
     )
   }
