@@ -16,7 +16,6 @@ apiController.getQuote = (req, res, next) => {
     console.error(err);
   });
 }
-
 //fetch('https://foaas.com/cup/adam',
 //   { method: "GET",
 //     headers: {
