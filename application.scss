@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Zen+Antique+Soft&display=swap');
+
+$zenFont: 'Zen Antique Soft', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+$primary-color: rgb(185, 239, 255);
+
+body {
+  background:linear-gradient(to right, $primary-color, lighten(pink, 20%), lighten(orange, 40%));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  // border: solid black 2px;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  // border: solid 2px black;
+  max-width: 60%;
+  padding: 20px;
+  font-family: $montserrat;
+  margin: 20px;
+
+  .quote-text {
+    padding: 5px;
+    // border: solid black 2px;
+  }
+  .author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;
+
+  }
+}
+
+.h1 {
+  font-family: $zenFont;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: white;
+  border: solid black 1px;
+  width: 135px;
+}

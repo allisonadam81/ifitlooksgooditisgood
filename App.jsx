@@ -8,24 +8,37 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      quote: '',
+      quote: {},
       quotesArray: []
     };
     this.fetchQuoteClick = this.fetchQuoteClick.bind(this);
+    this.favoriteQuoteClick = this.favoriteQuoteClick.bind(this);
   }
 
   fetchQuoteClick() {
     const { quotesArray } = this.state;
-    
     const arrIndex = [Math.floor(Math.random() * 1642)];
-
     const text = quotesArray[arrIndex].text;
     const author = quotesArray[arrIndex].author;
     if (!author) author = 'Michael O\'Halloran'
     this.setState({
       ...this.state,
-      quote: `${text} - ${author}`
+      quote: { text, author }
     })
+  }
+
+  favoriteQuoteClick(text, author) {
+    //console.log(`my text is ${text} and my author is ${author}`, 'I am here');
+    fetch('/api/favorite', {
+      method: "POST",
+      headers: {
+        'Content-type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({ text, author })
+    })
+    .then(data => data.json())
+    .then(res => alert(res.message))
   }
 
   componentDidMount () {
@@ -46,6 +59,7 @@ class App extends Component {
       <div>
         <Container
         fetchQuoteClick = {this.fetchQuoteClick}
+        favoriteQuoteClick = {this.favoriteQuoteClick}
         quote = {quote}
         />
       </div>

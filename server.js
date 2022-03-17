@@ -11,6 +11,10 @@ app.get('/api', apiController.getQuote, (req, res) => {
   res.status(200).send(res.locals.quote)
 });
 
+app.post('/api/favorite', apiController.favoriteQuote, (req, res) => {
+  res.status(200).json(res.locals)
+})
+
 //catch all route handler -
 
 app.get('/', (req, res) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const QuoteButton = props => (
-  <button onClick={() => props.fetchQuoteClick()}>My Button is real</button>
+  <button className='btn' onClick={() => props.fetchQuoteClick()}>New Quote</button>
 )
 
 export default QuoteButton
