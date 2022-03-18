@@ -7,6 +7,8 @@ $montserrat: 'Montserrat', sans-serif;
 $soft-orange: lighten(orange, 40%);
 $soft-pink: lighten(pink, 20%);
 $primary-blue: rgb(185, 239, 255);
+$primary-text: darken(lightgrey, 30%);
+
 
 body {
   background: linear-gradient(to right, $primary-blue, $soft-pink, $soft-orange);
@@ -33,6 +35,7 @@ body {
   .quote-text {
     padding: 5px;
     text-align: center;
+    
     //border: solid black 2px;
   }
   .author {
@@ -48,6 +51,7 @@ body {
   font-family: $zenFont;
   font-size: 50px;
   margin: 20px;
+  color: darken($primary-text, 10%);
 }
 
 .btn {
@@ -56,9 +60,9 @@ body {
   border-radius: 10px;
   margin: 20px;
   background: transparent;
-  border: solid black 1px;
+  border: solid $primary-text 1px;
   width: 135px;
-  color: black;
+  color: $primary-text;
 }
 .form-box {
   display: flex;
@@ -79,7 +83,7 @@ body {
 }
 .submit-form {
   border-radius: 6px;
-  border: solid 1px black;
+  border: solid 1px $primary-text;
   text-indent: 5px;
   background: transparent;
   padding: 5px 2px 5px 2px
@@ -87,4 +91,6 @@ body {
 
 .btn:hover {
   background: linear-gradient(to right, lighten($primary-blue, 5%) 15%, lighten(pink, 10%) 65%, lighten(orange, 45%));
+  color: darken($primary-text, 20%);
+  border: solid 1px darken($primary-text, 20%);
 }
