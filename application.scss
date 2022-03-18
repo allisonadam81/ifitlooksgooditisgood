@@ -23,8 +23,9 @@ body {
 .quote-box {
   display: flex;
   flex-direction: column;
-  // border: solid 2px black;
+  //border: solid 2px black;
   max-width: 60%;
+  max-height: 50px;
   padding: 20px;
   font-family: $montserrat;
   margin: 20px;
@@ -59,6 +60,31 @@ body {
   width: 135px;
   color: black;
 }
+.form-box {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+  flex-direction: row;
+  justify-content: s;
+  //border: black solid 1px;
+}
+.submit {
+  padding: 6px;
+  margin: 5px;
+  width: 60px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.submit-form {
+  border-radius: 6px;
+  border: solid 1px black;
+  text-indent: 5px;
+  background: transparent;
+  padding: 5px 2px 5px 2px
+}
+
 .btn:hover {
-  background: linear-gradient(to right, lighten($primary-blue, 5%) 10%, lighten(pink, 10%), lighten(orange, 45%));
+  background: linear-gradient(to right, lighten($primary-blue, 5%) 15%, lighten(pink, 10%) 65%, lighten(orange, 45%));
 }

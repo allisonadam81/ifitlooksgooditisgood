@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import QuoteButton from './QuoteButton.jsx'
-
 import FavoriteButton from './FavoriteButton.jsx';
+import DisplayFavorite from './DisplayFavorite.jsx';
 
 const Container = props => (
       <div  className='container'>
-        <h1 className='h1'>if it looks good, it is good</h1>
+        <h1 className='h1'>if it looks good, it is good.</h1>
         <div className='quote-box'>
           <div className='quote-text'>{props.quote.text}</div>
           <div className='quote-text author'> - {props.quote.author}</div>
@@ -18,6 +18,9 @@ const Container = props => (
           favoriteQuoteClick = {props.favoriteQuoteClick}
           text = {props.quote.text}
           author = {props.quote.author}
+        />
+        <DisplayFavorite
+
         />
         </div>
       </div>

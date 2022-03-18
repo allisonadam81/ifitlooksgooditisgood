@@ -34,6 +34,10 @@ apiController.favoriteQuote2 = (req, res, next) => {
   })
 }
 
+apiController.getFavorite = (req, res, next) => {
+  
+}
+
 //fetch('https://foaas.com/cup/adam',
 //   { method: "GET",
 //     headers: {
