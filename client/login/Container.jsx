@@ -20,7 +20,7 @@ const Container = props => (
           author = {props.quote.author}
         />
         <DisplayFavorite
-
+          getFavoriteClick = {props.getFavoriteClick}
         />
         </div>
       </div>

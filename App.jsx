@@ -13,6 +13,21 @@ class App extends Component {
     };
     this.fetchQuoteClick = this.fetchQuoteClick.bind(this);
     this.favoriteQuoteClick = this.favoriteQuoteClick.bind(this);
+    this.getFavoriteClick = this.getFavoriteClick.bind(this);
+  }
+
+  getFavoriteClick(author) {
+    console.log(author)
+    // fetch('/api/favorite', {
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-type': 'application/json',
+    //     'Accept': 'application/json'
+    //   },
+    //   body: JSON.stringify(author)
+    // })
+    // .then(data => data.json())
+    // .then(data => console.log(data))
   }
 
   fetchQuoteClick() {
@@ -64,6 +79,7 @@ class App extends Component {
         <Container
         fetchQuoteClick = {this.fetchQuoteClick}
         favoriteQuoteClick = {this.favoriteQuoteClick}
+        getFavoriteClick = {this.getFavoriteClick}
         quote = {quote}
         />
       </div>

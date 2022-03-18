@@ -35,7 +35,8 @@ apiController.favoriteQuote2 = (req, res, next) => {
 }
 
 apiController.getFavorite = (req, res, next) => {
-  
+  console.log(req.body);
+  return next();
 }
 
 //fetch('https://foaas.com/cup/adam',

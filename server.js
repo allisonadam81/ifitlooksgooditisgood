@@ -17,6 +17,10 @@ app.get('/api', apiController.getQuote, (req, res) => {
   res.status(200).send(res.locals.quote)
 });
 
+app.get('/api/favorite', apiController.getFavorite, (req, res) => {
+  
+})
+
 app.post('/api/favorite', apiController.favoriteQuote2, (req, res) => {
   res.status(200).json(res.locals)
 })
