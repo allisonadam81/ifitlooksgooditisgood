@@ -59,10 +59,11 @@ body {
   font-size: 15px;
   border-radius: 10px;
   margin: 20px;
-  background: transparent;
+  background-color: transparent;
   border: solid $primary-text 1px;
   width: 135px;
   color: $primary-text;
+  transition: all .3s;
 }
 .form-box {
   display: flex;
@@ -90,7 +91,8 @@ body {
 }
 
 .btn:hover {
-  background: linear-gradient(to right, lighten($primary-blue, 5%) 15%, lighten(pink, 10%) 65%, lighten(orange, 45%));
+  // background-color: linear-gradient(to right, lighten($primary-blue, 5%) 15%, lighten(pink, 10%) 65%, lighten(orange, 45%));
+  background-color: $soft-orange;
   color: darken($primary-text, 20%);
   border: solid 1px darken($primary-text, 20%);
 }

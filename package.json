@@ -1,7 +1,7 @@
 {
-  "name": "envo_tracker",
+  "name": "if it looks good, it is good",
   "version": "1.0.0",
-  "description": "a tracker to see what's going on with the environment",
+  "description": "a quote app with a pleasing UX",
   "main": "index.js",
   "scripts": {
     "test": "test",
@@ -11,19 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/allisonadam81/Envo_Tracker.git"
+    "url": "git+https://github.com/allisonadam81/ifitlooksgooditisgood"
   },
   "keywords": [
-    "environment",
-    "envo",
-    "tracker"
+    "gradient", "soothing"
   ],
   "author": "Adam Allison",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/allisonadam81/Envo_Tracker/issues"
+    "url": "https://github.com/allisonadam81/ifitlooksgooditisgood/issues"
   },
-  "homepage": "https://github.com/allisonadam81/Envo_Tracker#readme",
+  "homepage": "https://github.com/allisonadam81/ifitlooksgooditisgood#readme",
   "dependencies": {
     "isomorphic-fetch": "^3.0.0",
     "mongoose": "^6.2.7",
